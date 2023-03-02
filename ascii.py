@@ -4,7 +4,7 @@ import os
 import time
 
 def convert_to_ascii(arr, ascii_chars):
-    # Create an empty 2D array to store the ASCII characters
+    # Create an empty 2D array to store the ASCII characts
     ascii_frame = np.empty(arr.shape[:2], dtype='str')
 
     # Iterate over each pixel in the array and map its brightness to an ASCII character
@@ -23,14 +23,14 @@ for x in range(len(ascii_karakterleri)):
     kontrol_listesi.append(255 / len(ascii_karakterleri) * (x + 1))
 
 kalite_dusurme_oranı = int(input("Kalite düşürme oranı?: "))
-# Open the video file
+
 video = cv2.VideoCapture("saul.mp4")
 
 width = int(video.get(cv2.CAP_PROP_FRAME_WIDTH))
 height = int(video.get(cv2.CAP_PROP_FRAME_HEIGHT))
 fps = video.get(cv2.CAP_PROP_FPS)
 print("fps: {}".format(fps))
-# Get the total number of frames in the video
+
 totalframecount = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
 print("Total frame: {}".format(totalframecount))
 stacked_ascii_values = np.empty((totalframecount, int(height / kalite_dusurme_oranı), int(width / kalite_dusurme_oranı)), dtype='U1')
