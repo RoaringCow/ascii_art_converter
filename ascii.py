@@ -22,7 +22,7 @@ def convert_video(inputVideo):
     for x in range(len(ascii_karakterleri)):
         kontrol_listesi.append(255 / len(ascii_karakterleri) * (x + 1))
 
-    kalite_dusurme_oranı = int(input("Kalite düşürme oranı?: "))
+    kalite_dusurme_oranı = int(input("Quality reduction rate?:  "))
     # Open the video file
     video = cv2.VideoCapture(inputVideo)
 
