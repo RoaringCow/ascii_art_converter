@@ -1,4 +1,4 @@
-import ascii_video
+import ascii
 import camera_ascii
 import image_to_ascii
 
