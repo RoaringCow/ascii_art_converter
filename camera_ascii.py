@@ -5,7 +5,7 @@ scale = 16
 # set the frame width and height
 cap = cv2.VideoCapture(0)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640 / scale * 2)# * 2 is there because chars height in ps are twice as big as the width of the chars
-cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480 / scale)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480 / scale)     #im not really sure about ^
 
 # create a list of brightness values for each ASCII character
 ascii_chars = "   .'`^,:;Il!i><~+_-?][}{1)(|\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$"
