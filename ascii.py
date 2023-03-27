@@ -5,7 +5,7 @@ def convert_to_ascii(arr, ascii_chars):
     # Create an empty 2D array to store the ASCII characters
     ascii_frame = np.empty(arr.shape[:2], dtype='str')
 
-    # Iterate over each pixel in the array and map its brightness to an ASCII character
+    # brightness to ascii
     char_indices = np.floor_divide(arr, 255 / len(ascii_chars)).astype(int)
     for i in range(arr.shape[0]):
         for j in range(arr.shape[1]):
@@ -23,14 +23,14 @@ def convert_video(inputVideo):
         kontrol_listesi.append(255 / len(ascii_karakterleri) * (x + 1))
 
     kalite_dusurme_oranı = int(input("Quality reduction rate?:  "))
-    # Open the video file
+    
     video = cv2.VideoCapture(inputVideo)
 
     width = int(video.get(cv2.CAP_PROP_FRAME_WIDTH))
     height = int(video.get(cv2.CAP_PROP_FRAME_HEIGHT))
     fps = video.get(cv2.CAP_PROP_FPS)
     print("fps: {}".format(fps))
-    # Get the total number of frames in the video
+    # get the total number of frames in the video
     totalframecount = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
     print("Total frame: {}".format(totalframecount))
     stacked_ascii_values = np.empty((totalframecount, int(height / kalite_dusurme_oranı), int(width / kalite_dusurme_oranı)), dtype='U1')
