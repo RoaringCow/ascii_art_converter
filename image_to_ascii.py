@@ -6,7 +6,7 @@ def convert_to_ascii(arr, ascii_chars):
     # Create an empty 2D array to store the ASCII characters
     ascii_frame = np.empty(arr.shape[:2], dtype='str')
 
-    # Iterate over each pixel in the array and map its brightness to an ASCII character
+    # brightness to characters
     char_indices = np.floor_divide(arr, 255 / len(ascii_chars)).astype(int)
     for i in range(arr.shape[0]):
         for j in range(arr.shape[1]):
