@@ -1,7 +1,4 @@
-Hello! 
-This repo has 3 scripts and you can control them with the manager script.
-You must have python and the modules for this to run.
-there is no intention of non-programmer or the people that dont know how to run scripts to use this
+Hello! This repo contains three scripts, which can be controlled using the manager script. To run these scripts, you must have Python and the required modules installed. This is intended for programmers or those familiar with running scripts, and not for non-programmers or those who may not know how to run scripts.
 
 
 
