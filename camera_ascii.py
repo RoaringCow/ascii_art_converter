@@ -42,4 +42,4 @@ def video_capture():
 def camera_to_ascii():
     while True:
         video_capture()
-    cap.release()
+    cap.release() # Leave the camera alone. Probably unnecessary
