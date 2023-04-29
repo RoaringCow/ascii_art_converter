@@ -3,7 +3,7 @@ import camera_ascii
 import image_to_ascii
 
 def video_to_ascii(video):
-    ascii_video.convert_video(video)
+    ascii.convert_video(video)
 
 def ascii_camera():
     camera_ascii.camera_to_ascii()
