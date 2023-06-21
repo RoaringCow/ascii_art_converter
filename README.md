@@ -3,4 +3,12 @@ Hello! This repo contains three scripts, which can be controlled using the manag
 
 
 The aspect ratio is not preserved with this code 
+
+
+
+
+
+
+
+
 ![Ekran görüntüsü 2023-03-27 170520](https://user-images.githubusercontent.com/99341198/227964735-3969cb47-57e7-4641-97dc-e494c853ea78.png)
