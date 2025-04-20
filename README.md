@@ -1,4 +1,4 @@
-Another version of this is written in c++. It is way faster than this one so i reccomend you use that one. But this is easier to use even though it is slower.
+Another version of this is written in c++. It is way faster than this one so i recommend you use that one. But this is easier to use even though it is slower.
 
 
 Hello! This repo contains three scripts, which can be controlled using the manager script. .
